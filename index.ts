@@ -12,7 +12,7 @@ server.app.use(bodyParser.urlencoded({extended:true}));
 server.app.use('/',defaultRoutes);
 server.app.use('/personajes',personajeRoutes);
 
-mongoose.connect('mongodb://localhost:27017/starWarsDb',(error)=>{
+mongoose.connect('mongodb+srv://starw_personajes:88Daniela@cluster0.1krx3ig.mongodb.net/starWarsDb',(error)=>{
     if(error){
         throw error;
     }
